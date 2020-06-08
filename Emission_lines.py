@@ -20,7 +20,9 @@ class QuotesSpider(scrapy.Spider):
     
     def parse(self, response):
         element=self.element
-        file=open('/home/reiher/Documents/Pesquisa, extensão e material extra/LIBS/Simulando espectros/dadosNIST/linhas_emissao/'+element+' '+str(response.url[58+len(element)])+'.csv','w')
+        Z=self.Z
+        # "lines_directory" is the directory where you would like to save your files
+        file=open('/line_directory/'+element+' '+str(response.url[58+len(element)])+'.csv','w')
         table = response.xpath('/html/body/p/text()').get()
         table = [x.split('\t') for x in table.split('\n')]
         for i in range(len(table)):
@@ -30,7 +32,9 @@ class QuotesSpider(scrapy.Spider):
         
         if element=="H":
             df.drop([df['term_k'].index[i] for i in df['term_k'].index if df['term_k'].values[i]!=''   ],axis=0,inplace=True) 
-        
+        if Z==int(response.url[58+len(element)])+1:
+            empty=open('/lines_directory/'+elemento+" "+str(Z)+'.csv','w')
+            empty.close  
         df.to_csv(file)    
                         
         file.close()
