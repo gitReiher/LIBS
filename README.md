@@ -1,6 +1,6 @@
 # LTE spectra simulator for LIBS spectroscopy
 
-About
+**About**
 
 Code for webscrapping NIST's current database for non-commercial offline uses, more specifically using the scraped data to build LTE spectra, widely used in LIBS spectroscopy analysis. The simulated values all reproduce what is simulated at the already well-stablished NIST's LIBS Database [1]. NIST does not have any responsibility over the use of the codes within this project or the copies that they produce, which were solely developed by the author of this project. Furthermore, the author does not have any asssociation with NIST.
 
