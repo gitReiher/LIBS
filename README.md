@@ -5,8 +5,8 @@ Code for webscrapping NIST's database for non-commercial uses on offline LTE spe
 
 # Scraping routines
 
-- levels routine
-- lines routine
+- Eenergy_levels.py routine
+- Emission_lines.py routine
 
 Both use a very straightforward scraping method, and rely on the scrapy library and also the periodictable library, for which I thank and give credit here. 
 
