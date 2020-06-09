@@ -17,12 +17,16 @@ Both use a very straightforward scraping method, and rely on the scrapy library 
 
 - LTE.py
 
-Reads the offline stored data provided by the other routines and performs LTE calculations
+Reads the offline stored data provided by the other routines and performs LTE calculations. The calculations show agreement with other sources at all tested cases. For now, all the spectrum plots were made with the plotly library [4] and were also made in a very simple way. So, maybe the code will be updated to improve the data representation in the future. It may also be improved for increasing performance with elements with a great amount of emission lines.
 
-References
+Every feedback would be great to increase my programming skills. I hope you find good use of this code.
+
+**References**
 
 [1] - Kramida, A., Ralchenko, Yu., Reader, J. and NIST ASD Team (2019). NIST Atomic Spectra Database (version 5.7.1), [Online]. Available: https://physics.nist.gov/asd [Mon Jun 08 2020]. National Institute of Standards and Technology, Gaithersburg, MD. DOI: https://doi.org/10.18434/T4W30F
 
 [2] - Kouzis-Loukas, D. (2016). Learning Scrapy. Packt Publishing Ltd.
 
 [3] - Kienzle, P. A. 2017. “Periodictable V1.5.0.” doi:10.5281/zenodo.840347
+
+[4] - Sievert C (2020). Interactive Web-Based Data Visualization with R, plotly, and shiny. Chapman and Hall/CRC. ISBN 9781138331457, https://plotly-r.com.
