@@ -29,4 +29,4 @@ Every feedback would be great to increase my programming skills. I hope you find
 
 [3] - Kienzle, P. A. 2017. “Periodictable V1.5.0.” doi:10.5281/zenodo.840347
 
-[4] - Sievert C (2020). Interactive Web-Based Data Visualization with R, plotly, and shiny. Chapman and Hall/CRC. ISBN 9781138331457, https://plotly-r.com.
+[4] -  Plotly Technologies Inc. Title: Collaborative data science Publisher: Plotly Technologies Inc. Place of publication: Montréal, QC Date of publication: 2015 URL: https://plot.ly
