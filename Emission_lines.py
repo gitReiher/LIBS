@@ -33,8 +33,9 @@ class QuotesSpider(scrapy.Spider):
         if element=="H":
             df.drop([df['term_k'].index[i] for i in df['term_k'].index if df['term_k'].values[i]!=''   ],axis=0,inplace=True) 
         if Z==int(response.url[58+len(element)])+1:
-            empty=open('/lines_directory/'+elemento+" "+str(Z)+'.csv','w')
-            empty.close  
+            dfz= pd.DataFrame([[0]*len(df.columns.values)],columns=df.columns,index=[0])
+            dfz['ritz_wl_air(nm)']=0.1
+            dfz.to_csv('/home/reiher/Documents/Pesquisa, extensão e material extra/LIBS/Simulando espectros/dadosNIST/linhas_emissao/'+elemento+" "+str(Z)+'.csv')
         df.to_csv(file)    
                         
         file.close()
